@@ -1,0 +1,124 @@
+.class-input-container {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+}
+
+.remove-field {
+	position: absolute;
+	font-size: 32px;
+}
+
+.class-input:focus + .remove-field {
+	opacity: 1;
+}
+
+.class-input {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 36px;
+	border: none;
+	border-bottom: 3px solid black;
+}
+
+.class-input-container:last-child {
+	opacity: 0.5;
+}
+
+.class-input:focus {
+	opacity: 1;
+}
+
+.button-container {
+	overflow: visible;
+	position: absolute;
+	margin-top: 2.5%;
+}
+
+.button-container button {
+	margin-top: 1%;
+	padding: 2% 4%;
+	font-size: 32px;
+	background-color: #88001e;
+	color: white;
+	position: fixed;
+}
+
+.switch-field {
+	margin-top: 4%;
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #88001e;
+	color: white;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+	padding: 14px 22px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #3c000d;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+
+#view_schedules, #loading_schedules {
+	display: none;
+}
+#view_schedules h2, #loading_schedules h1 {
+	margin-top: 5%;
+	text-align: center;
+}
+
+#view_schedules table {
+	margin-top: 5%;
+}
+
+#back_button {
+	font-size: 16px;
+	background-color: #88001e;
+	color: white;
+}
+
+#loading_schedules img {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	display: block;
+}
+
+
+/* 1680 width */
+
+/*
+	Normal: #88001e
+	Highlighted: #3c000d
+*/

@@ -1,0 +1,28 @@
+nav.navbar {
+	background-color: #88001e;
+}
+nav.navbar button {
+	color: white;
+}
+
+main {
+	margin-bottom: 55px;
+}
+
+footer, footer nav {
+	color: white;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	margin-bottom: 0px;
+}
+
+.right {
+	float: right;
+}
+/*
+	Normal: #88001e
+	Highlighted: #3c000d
+*/

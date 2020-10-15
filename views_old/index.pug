@@ -1,0 +1,46 @@
+extends default
+
+block content
+	link(rel='stylesheet', href='css/index.css')
+	div.container-fluid#enter_courses
+		div.row
+			div.col-sm-2
+				div.button-container
+					h3.text-center Semester
+					div.switch-field
+						input(type="radio" id="fall-semester" name="semester" value="40")
+						label(for="fall-semester") Fall
+						input(type="radio" id="spring-semester" name="semester" value="10")
+						label(for="spring-semester") Spring
+						input(type="radio" id="summer-semester" name="semester" value="20")
+						label(for="summer-semester") Summer
+					h3.text-center School Year
+					div.switch-field
+						input(type="radio" id="earlier-year" name="school_year" value="0001")
+						label(for="earlier-year") 0001 - 0000
+						input(type="radio" id="later-year" name="school_year" value="0000")
+						label(for="later-year") 0000 - 0001
+					h3.text-center Full Classes
+					div.switch-field
+						input(type="radio" id="yes-full" name="include_full" value="true")
+						label(for="yes-full") Include in Schedule
+						input(type="radio" id="no-full" name="include_full" value="false" checked="true")
+						label(for="no-full") Don't include in schedule
+					
+			div.col-sm-8
+				h1.text-center Type course names (Ex. CS228)
+				div(id="input-fields")
+						
+			div.col-sm-2
+				div.button-container
+					button(class="btn" id="send_data") Create
+	div.container-fluid#loading_schedules
+		div.row
+			div.col-sm-12
+				h1 Determining all possible schedules...
+	div.container-fluid#view_schedules
+	
+	script(src='js/dynamic_input_fields.js')
+	script(src='js/initialize_schoolyear.js')
+	script(src='js/send_schedule_data.js')
+	script(src='js/populate_tables.js')

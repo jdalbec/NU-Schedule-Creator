@@ -1,0 +1,61 @@
+doctype html
+html
+	head
+		title #{title}
+		link(rel='stylesheet', href='css/index.css')
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+	body
+		h2#title-text NU Schedule Creator
+		
+		div.container-fluid#first-screen
+			div.row(class="justify-content-center")
+				div.col-sm-8
+					div.row(class="justify-content-center")
+						h3 Semester
+					div.row#semester-radio(class="radio-options justify-content-center")
+						input#fall-semester(type="radio" name="semester" value="40")
+						label(for="fall-semester") Fall
+						input#spring-semester(type="radio" name="semester" value="10")
+						label(for="spring-semester") Spring
+						input#summer-semester(type="radio" name="semester" value="20")
+						label(for="summer-semester") Summer
+					div.row(class="justify-content-center")
+						h3 School Year
+					div.row#year-radio(class="radio-options justify-content-center")
+						input#earlier-year(type="radio" name="school-year")
+						label(for="earlier-year") Error
+						input#later-year(type="radio" name="school-year")
+						label(for="later-year") Error
+					div.row(class="justify-content-center")
+						h3 Include Full Classes
+					div.row#include-full-radio(class="radio-options justify-content-center")
+						input#do-include(type="radio" name="include-full" value="yes")
+						label(for="do-include") Yes
+						input#dont-include(type="radio" name="include-full" value="no" checked="checked")
+						label(for="dont-include") No
+			div.row(class="justify-content-center")
+				div.col-sm-8
+					div#course-input-container
+			
+			div.row(class="justify-content-center")
+				div.col-sm-8
+					button.btn#send-data Create
+		
+		div.container-fluid#loading-screen
+			h1 Creating Schedule...
+		
+		div.container-fluid#result-screen
+			
+		
+		
+		div.row(class="justify-content-center")
+			footer
+				div &copy <span class="footer_legal"></span> All Rights Reserved. 
+				div This website is independently maintained and not affiliated with Norwich University.
+		script(src='js/jquery-3.4.1.min.js')
+		script(src='js/bootstrap.bundle.min.js')
+		script(src='js/initialize.js')
+		script(src='js/input_fields.js')
+		script(src='js/send.js')
+		script(src='js/get.js')

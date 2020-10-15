@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title #{title}
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='css/bootstrap.min.css')
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+	body
+		main
+			block header
+				nav(class="navbar navbar-expand-lg")
+					div.nav-collapse
+						ul(class="navbar-nav mr-auto")
+							li.nav-item
+								a.nav-link(href="#" data-toggle="collapse" data-target=".nav-collapse")
+									button.btn Schedule Creator
+							li.nav-item
+								a.nav-link(href="#" data-toggle="collapse" data-target=".nav-collapse")
+									button.btn About
+						
+			block content
+		footer
+			nav(class="navbar navbar-expand-lg")
+					div.nav-collapse
+						ul(class="navbar-nav mr-auto")
+							li.nav-item
+								span Notice: This website is independently maintained and not affiliated with Norwich University.
+		script(src='js/jquery-3.4.1.min.js')
+		script(src='js/bootstrap.bundle.min.js')
